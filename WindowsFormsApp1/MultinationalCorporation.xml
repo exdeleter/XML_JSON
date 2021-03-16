@@ -1,0 +1,161 @@
+<MultinationalCorporation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Occupations>
+		<Occupation id="1">
+			<categories>Phones</categories>
+			<time>6</time>
+			<volume>200000</volume>
+			<countryproduce>China</countryproduce>
+		</Occupation>
+		<Occupation id="2">
+			<categories>Televisors</categories>
+			<time>10</time>
+			<volume>3500000</volume>
+			<countryproduce>Taiwan</countryproduce>
+		</Occupation>
+		<Occupation id="3">
+			<categories>Fridges</categories>
+			<time>3</time> 
+			<volume>10000</volume>
+			<countryproduce>Canada</countryproduce>
+		</Occupation>
+	</Occupations>
+	<CountryMarkets>
+		<CountryMarket id="1">
+			<namecountry>Russia</namecountry>
+			<influence>
+				<idoccup>1</idoccup>
+				<procent>65</procent>
+				<volume>2000</volume>
+			</influence>
+			<Workers>
+				<headmen>Name1Surname1</headmen>
+				<maindeveloper>Name2Surname2</maindeveloper>
+				<PR-Agent>Name3Surname3</PR-Agent>
+			</Workers>
+		</CountryMarket>
+		<CountryMarket id="2">
+			<namecountry>USA</namecountry>
+			<influence>
+				<idoccup>2</idoccup>
+				<procent>30</procent>
+				<volume>5500</volume>
+			</influence>
+			<Workers>
+				<headmen>Name4Surname4</headmen>
+				<maindeveloper>Name5Surname5</maindeveloper>
+				<PR-Agent>Name6Surname6</PR-Agent>
+			</Workers>
+		</CountryMarket>
+		<CountryMarket id="3">
+			<namecountry>Canada</namecountry>
+			<influence>
+				<idoccup>3</idoccup>
+				<procent>70</procent>
+				<volume>7500</volume>
+			</influence>
+			<Workers>
+				<headmen>Name7Surname7</headmen>
+				<maindeveloper>Name8Surname8</maindeveloper>
+				<PR-Agent>Name9Surname9</PR-Agent>
+			</Workers>
+		</CountryMarket>
+		<CountryMarket id="4">
+			<namecountry>England</namecountry>
+			<influence>
+				<idoccup>3</idoccup>
+				<procent>30</procent>
+				<volume>1200</volume>
+			</influence>
+			<Workers>
+				<headmen>Name1Surname1</headmen>
+				<maindeveloper>Name2Surname2</maindeveloper>
+				<PR-Agent>Name9Surname9</PR-Agent>
+			</Workers>
+		</CountryMarket>
+		<CountryMarket id="5">
+			<namecountry>Mexico</namecountry>
+			<influence>
+				<idoccup>1</idoccup>
+				<procent>10</procent>
+				<volume>5000</volume>
+			</influence>
+			<Workers>
+				<headmen>Name4Surname4</headmen>
+				<maindeveloper>Name5Surname5</maindeveloper>
+				<PR-Agent>Name11Surname11</PR-Agent>
+			</Workers>
+		</CountryMarket>
+	</CountryMarkets>
+	<Staffs>
+		<Staff id="1">
+			<position>headman</position>
+			<education>
+				<school code="302" country="USA" city="New Orlean"></school>
+				<institute code="500" country="USA" city="Harvard"></institute>
+			</education>
+			<information>
+				<age>50</age>
+				<familyStatus>not married</familyStatus>
+				<EnterYear>2000</EnterYear>
+			</information>
+			<salary>250000</salary>
+			<workingtime>10</workingtime>
+		</Staff>
+		<Staff id="2">
+			<position>deputyheadman</position>
+			<education>
+				<school code="305" country="USA" city="New York"></school>
+				<institute code="30" country="England" city="London"></institute>
+			</education>
+			<information>
+				<age>35</age>
+				<familyStatus>married</familyStatus>
+				<EnterYear>2010</EnterYear>
+			</information>
+			<salary>10000</salary>
+			<workingtime>7</workingtime>
+		</Staff>
+		<Staff id="3">
+			<position>developer</position>
+			<education>
+				<school code="52" country="Russia" city="Moscow"></school>
+				<institute code="100" country="Russia" city="Moscow"></institute>
+			</education>
+			<information>
+				<age>28</age>
+				<familyStatus>not married</familyStatus>
+				<EnterYear>2012</EnterYear>
+			</information>
+			<salary>10000</salary>
+			<workingtime>5</workingtime>
+		</Staff>
+		<Staff id="4">
+			<position>PR-Agent</position>
+			<education>
+				<school code="24" country="USA" city="New - York"></school>
+				<institute code="200" country="England" city="London"></institute>
+			</education>
+			<information>
+				<age>25</age>
+				<familyStatus>not married</familyStatus>
+				<EnterYear>2015</EnterYear>
+			</information>
+			<salary>1000</salary>
+			<workingtime>2</workingtime>
+		</Staff>
+		<Staff id="5">
+			<position>helperofdeveloper</position>
+			<education>
+				<school code="234" country="Russia" city="Kazan"></school>
+				<institute code="321" country="Russia" city="Moscow"></institute>
+			</education>
+			<information>
+				<age>25</age>
+				<familyStatus>married</familyStatus>
+				<EnterYear>2014</EnterYear>
+			</information>
+			<salary>2000</salary>
+			<workingtime>4</workingtime>
+		</Staff>
+	</Staffs>
+</MultinationalCorporation>		
