@@ -25,7 +25,7 @@ namespace WindowsFormsApp1
                 new XmlSerializer(typeof(Multinational.MultinationalCorporation));
             Multinational.MultinationalCorporation i;
 
-            using (Stream reader = new FileStream(@"C:\Users\dewaf\source\repos\WindowsFormsApp1\WindowsFormsApp1\MultinationalCorporation.xml", FileMode.Open))
+            using (Stream reader = new FileStream(@"C:\Users\dewaf\source\repos\WindowsFormsApp1\WindowsFormsApp1\NewFolder1\MultinationalCorporation.xml", FileMode.Open))
             {
 
                 i = (Multinational.MultinationalCorporation)serializer.Deserialize(reader);

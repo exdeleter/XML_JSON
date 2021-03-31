@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,34 +49,53 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddedWork.cs">
+    <Compile Include="JSON\JSONMarkets.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddedWork.Designer.cs">
+    <Compile Include="JSON\JSONMarkets.Designer.cs">
+      <DependentUpon>JSONMarkets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JSON\MCJSON.cs" />
+    <Compile Include="NewFolder1\AddedWork.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewFolder1\AddedWork.Designer.cs">
       <DependentUpon>AddedWork.cs</DependentUpon>
     </Compile>
-    <Compile Include="Markets.cs">
+    <Compile Include="JSON\JSONForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Markets.Designer.cs">
+    <Compile Include="JSON\JSONForm.Designer.cs">
+      <DependentUpon>JSONForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewFolder1\Markets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewFolder1\Markets.Designer.cs">
       <DependentUpon>Markets.cs</DependentUpon>
     </Compile>
-    <Compile Include="Multinational.cs" />
-    <Compile Include="Information.cs">
+    <Compile Include="NewFolder1\Multinational.cs" />
+    <Compile Include="NewFolder1\Information.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Information.Designer.cs">
+    <Compile Include="NewFolder1\Information.Designer.cs">
       <DependentUpon>Information.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AddedWork.resx">
+    <EmbeddedResource Include="JSON\JSONForm.resx">
+      <DependentUpon>JSONForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JSON\JSONMarkets.resx">
+      <DependentUpon>JSONMarkets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewFolder1\AddedWork.resx">
       <DependentUpon>AddedWork.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Information.resx">
+    <EmbeddedResource Include="NewFolder1\Information.resx">
       <DependentUpon>Information.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Markets.resx">
+    <EmbeddedResource Include="NewFolder1\Markets.resx">
       <DependentUpon>Markets.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -85,6 +107,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -99,7 +122,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="MultinationalCorporation.xml" />
+    <Content Include="NewFolder1\MultinationalCorporation.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
